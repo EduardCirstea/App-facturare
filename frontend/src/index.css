@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+  --primary-color: #f2f2f2;
+  --shadow: rgba(0, 0, 0, 0.5);
+}
+#root {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  height: 100%;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #4d99de;
+}
+
+/* p {
+  line-height: 1.7;
+} */
+
+ul {
+  list-style: none;
+}
+
+li {
+  line-height: 2.2;
+}
+
+/* ---FORM Style */
+
+/* ---FORM Style */
+
+/* BUTTON STYLE */
+.btn {
+  padding: 10px 20px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background: #000;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  appearance: button;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-transparent {
+  border: none;
+  color: #242424;
+  background: #ececec;
+}
+
+.btn svg {
+  margin-right: 8px;
+}
+
+.btn-reverse {
+  background: #fff;
+  color: #000;
+}
+
+.btn-block {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.btn-sm {
+  padding: 5px 15px;
+  font-size: 13px;
+}
+
+.btn-danger {
+  background: darkred;
+  border: none;
+}
+
+.btn-back {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.btn-sort {
+  background-color: #ececec;
+  color: #000;
+  border: none;
+}
+
+/* .btn:hover {
+  transform: scale(0.98);
+} */
+
+/* BUTTON STYLE */
+
+/* @media (max-width: 600px) {
+}
+
+@media (max-height: 800px) {
+  .container {
+    margin: 50px auto;
+    padding: 0 10px;
+  }
+  .logo {
+    padding: 10px 0 0 15px;
+    font-size: 27px;
+  }
+} */
+/*--- SIDEBAR---- */
+.sidebar {
+  position: relative;
+  min-width: 288px;
+  height: 100%;
+  background: #f8f8f8;
+  transition: all 0.5s ease;
+}
+.sidebar ul {
+  margin-top: 40px;
+}
+
+.sidebar ul a {
+  top: 0;
+  left: 0;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  padding: 14px 14px 14px 30px;
+  color: #000;
+  transition: 0.4s;
+  font-size: 18px;
+  position: relative;
+}
+.sidebar ul a svg {
+  float: left;
+  width: 25px;
+  height: 25px;
+  color: #000;
+  margin-right: 20px;
+}
+.sidebar ul a:hover {
+  background-color: #fff;
+}
+.active {
+  position: relative;
+  z-index: 10;
+}
+.active::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* width: 268px; */
+  width: 93%;
+  height: 100%;
+  background: #fff;
+  border-radius: 10px 0px 0px 10px;
+  z-index: -1;
+}
+.logo {
+  font-size: 32px;
+  line-height: 38.73px;
+  padding: 35px 0 0 40px;
+}
+
+.btn-logout {
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  font-size: 18px;
+  background: transparent;
+  color: #000;
+  border: none;
+  margin-bottom: 20px;
+
+  padding-left: 30px;
+}
+.btn-logout svg {
+  width: 25px;
+  height: 25px;
+  color: #000;
+}
+
+.blur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.768);
+  z-index: 99;
+}
+
+/* regiuster from */
+.register {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border: 1px solid #000;
+  padding: 30px 50px;
+  padding-bottom: 1rem;
+  width: 720px;
+  height: 900px;
+  position: relative;
+  z-index: 10;
+}
+
+.register_header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.register_header i {
+  position: absolute;
+  right: -10px;
+  font-family: Arial, Helvetica, sans-serif;
+  top: -10px;
+  background-color: #fff;
+  cursor: pointer;
+  z-index: 20;
+  border: 1px solid #000;
+  padding: 0 10px;
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+.register_header i:hover {
+  background-color: gray;
+  color: #fff;
+}
+.register_form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.register_form input {
+  width: 100%;
+  padding: 10px 25px;
+  margin-bottom: 15px;
+  border: 1px solid #8d8d8d;
+}
+.register_form label {
+  display: block;
+  font-weight: lighter;
+  align-self: flex-start;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+/* register form */
+.btn-register {
+  padding: 10px 20px;
+}
+
+/* Edit factura */
+.header-home {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 100px;
+}
+.header-home .logo {
+  padding-left: 0;
+}
+.header-home p {
+  padding-top: 45px;
+  font-size: 20px;
+}
+.my-20 {
+  margin: 40px 0px;
+}
+.edit-btn {
+  padding: 10px 20px;
+}
+.input-list div {
+  width: 100%;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  flex-direction: row;
+}
+.input-list div .form-grup {
+  margin: 20px 20px 20px 0;
+}
+.input-list div .form-grup label {
+  margin-right: 10px;
+}
+.input-list div .form-grup input,
+.input-list div .form-grup select {
+  margin-right: 10px;
+  padding: 5px 10px;
+}
+.input-list div .form-grup select {
+  width: 150px;
+}
+
+/* .input-list div:first-child .form-grup input,
+.input-list div:first-child .form-grup select {
+  pointer-events: none;
+} */
+.deleteBtn {
+  padding: 1px 10px;
+  font-size: 20px;
+}
+.add {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.addBtn {
+  padding: 1px 10px;
+  font-size: 20px;
+}
+.select-client {
+  width: 200px;
+  height: 40px;
+}
+.grid-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-submit {
+  padding: 10px 20px;
+  font-weight: bold;
+  margin-top: 30px;
+  border: 1px solid #242424;
+}
+
+.inline {
+  display: inline-block;
+  margin-left: 100px;
+}
+/* Edit factura */

@@ -1,0 +1,151 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+body {
+  font-family: 'Inter', sans-serif;
+} */
+.logo {
+  font-size: 32px;
+  line-height: 38.73px;
+  padding: 35px 0 0 40px;
+}
+
+.container {
+  width: 100%;
+  max-width: 450px;
+  margin: 116px auto;
+  text-align: center;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48.41px;
+}
+
+.container h3 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.78px;
+  padding: 24px 0px 49px;
+}
+
+.form {
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-group label {
+  text-align: left;
+  display: block;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 9px 0px 12px 25px;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  background: var(--primary-color);
+  margin: 16px 0 0;
+  font-family: inherit;
+}
+
+.line {
+  position: relative;
+  font-size: 20px;
+  color: var(--shadow);
+  margin: 30px 0;
+}
+
+.line::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 40%;
+  border: 1px solid var(--shadow);
+}
+
+.line::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 40%;
+  border: 1px solid var(--shadow);
+}
+.btn-block {
+  margin-top: 30px !important;
+}
+.container p {
+  font-size: 18px;
+  line-height: 22px;
+  text-align: left;
+}
+
+@media (max-width: 600px) {
+}
+
+@media screen and (max-height: 800px) {
+  .container {
+    margin: 50px auto;
+    padding: 0 10px;
+  }
+  .logo {
+    padding: 10px 0 0 15px;
+    font-size: 27px;
+  }
+  .container h3 {
+    padding: 15px 0px 20px;
+  }
+}
+@media screen and(max-height: 600px) {
+  .container {
+    margin: 30px auto;
+    padding: 0 10px;
+  }
+  .logo {
+    padding: 10px 0 0 15px;
+    font-size: 24px;
+  }
+  .container h3 {
+    padding: 15px 0px 20px;
+    font-size: 16px;
+  }
+  .line {
+    font-size: 16px;
+  }
+  .line::before,
+  .line::after {
+    width: 43%;
+  }
+  .container p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    margin: 30px auto;
+    padding: 0 10px;
+  }
+  .logo {
+    padding: 10px 0 0 15px;
+    font-size: 24px;
+  }
+  .container h3 {
+    padding: 15px 0px 20px;
+    font-size: 16px;
+  }
+  .line {
+    font-size: 16px;
+  }
+  .line::before,
+  .line::after {
+    width: 43%;
+  }
+  .container p {
+    font-size: 15px;
+  }
+}
